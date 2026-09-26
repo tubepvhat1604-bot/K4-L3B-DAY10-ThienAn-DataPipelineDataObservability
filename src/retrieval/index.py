@@ -116,7 +116,7 @@ class LocalEmbeddingIndex:
             {
                 "backend": "chroma",
                 "embedding_model": settings.embedding_model,
-                # Luu duong dan tuong doi -> artifact khong chua path may ca nhan (vd C:\\Users\\...)
+                # Luu duong dan tuong doi so voi project_dir -> artifact khong phu thuoc may ca nhan
                 "persist_path": persist_path.relative_to(settings.paths.project_dir).as_posix(),
                 "collection_name": collection_name,
                 "documents": documents,
