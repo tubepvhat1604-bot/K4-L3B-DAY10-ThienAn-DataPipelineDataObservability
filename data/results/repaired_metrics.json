@@ -1,0 +1,35 @@
+{
+  "samples": 10,
+  "retrieval_hit_rate": 1.0,
+  "mean_token_f1": 1.0,
+  "judge_accuracy": 1.0,
+  "mean_judge_score": 5,
+  "ragas": {
+    "skipped": "Set RUN_RAGAS=1 to enable the slower Ragas pass."
+  },
+  "collection_name": "papers-repaired",
+  "indexed_documents": 24,
+  "judge_backend": "llm:openai/gpt-4o-mini",
+  "by_question_type": {
+    "summary": {
+      "samples": 3,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0
+    },
+    "authors": {
+      "samples": 3,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0
+    },
+    "date": {
+      "samples": 2,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0
+    },
+    "categories": {
+      "samples": 2,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0
+    }
+  }
+}

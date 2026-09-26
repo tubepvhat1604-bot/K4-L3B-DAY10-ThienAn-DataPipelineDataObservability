@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2026-09-26T03:52:20+00:00",
+    "stage": "baseline",
+    "rows": 24,
+    "gate_pass": true,
+    "failed_expectations": 0,
+    "is_fresh": true,
+    "stale_ratio": 0.0417,
+    "retrieval_hit_rate": 1.0,
+    "mean_token_f1": 1.0
+  },
+  {
+    "timestamp": "2026-09-26T03:53:12+00:00",
+    "stage": "corrupted",
+    "rows": 23,
+    "gate_pass": false,
+    "failed_expectations": 3,
+    "is_fresh": false,
+    "stale_ratio": 0.2609,
+    "retrieval_hit_rate": 0.7,
+    "mean_token_f1": 0.674074074074074
+  },
+  {
+    "timestamp": "2026-09-26T03:53:12+00:00",
+    "stage": "repaired",
+    "rows": 24,
+    "gate_pass": true,
+    "failed_expectations": 0,
+    "is_fresh": true,
+    "stale_ratio": 0.0417,
+    "retrieval_hit_rate": 1.0,
+    "mean_token_f1": 1.0
+  }
+]

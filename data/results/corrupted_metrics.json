@@ -1,0 +1,35 @@
+{
+  "samples": 10,
+  "retrieval_hit_rate": 0.7,
+  "mean_token_f1": 0.674074074074074,
+  "judge_accuracy": 0.6,
+  "mean_judge_score": 3.9,
+  "ragas": {
+    "skipped": "Set RUN_RAGAS=1 to enable the slower Ragas pass."
+  },
+  "collection_name": "papers-corrupted",
+  "indexed_documents": 23,
+  "judge_backend": "llm:openai/gpt-4o-mini",
+  "by_question_type": {
+    "summary": {
+      "samples": 3,
+      "retrieval_hit_rate": 0.6666666666666666,
+      "mean_token_f1": 0.24691358024691354
+    },
+    "authors": {
+      "samples": 3,
+      "retrieval_hit_rate": 0.6666666666666666,
+      "mean_token_f1": 1.0
+    },
+    "date": {
+      "samples": 2,
+      "retrieval_hit_rate": 0.5,
+      "mean_token_f1": 0.5
+    },
+    "categories": {
+      "samples": 2,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0
+    }
+  }
+}

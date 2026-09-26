@@ -1,0 +1,142 @@
+{
+  "report_name": "corrupted",
+  "evaluated_at": "2026-09-26T03:52:33.546322+00:00",
+  "great_expectations_version": "1.18.0",
+  "suite_name": "papers_quality_suite_corrupted",
+  "row_count": 23,
+  "success": false,
+  "expectations_total": 7,
+  "expectations_passed": 4,
+  "failed_expectations": [
+    "expect_column_values_to_be_unique(paper_id)",
+    "expect_column_value_lengths_to_be_between(title)",
+    "expect_column_value_lengths_to_be_between(summary)"
+  ],
+  "checks": [
+    {
+      "expectation": "expect_table_row_count_to_be_between",
+      "column": null,
+      "kwargs": {
+        "min_value": 5,
+        "max_value": 5000
+      },
+      "success": true,
+      "observed_value": 23,
+      "element_count": null,
+      "unexpected_count": null,
+      "unexpected_percent": null,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "paper_id",
+      "kwargs": {
+        "column": "paper_id"
+      },
+      "success": true,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_be_unique",
+      "column": "paper_id",
+      "kwargs": {
+        "column": "paper_id"
+      },
+      "success": false,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 8,
+      "unexpected_percent": 34.78260869565217,
+      "partial_unexpected_list": [
+        "10.1145/3637528.3671821",
+        "10.1145/3637528.3671819",
+        "10.1145/3637528.3671816",
+        "10.1145/3637528.3671809",
+        "10.1145/3637528.3671821"
+      ]
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "title",
+      "kwargs": {
+        "column": "title"
+      },
+      "success": true,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "title",
+      "kwargs": {
+        "column": "title",
+        "min_value": 8
+      },
+      "success": false,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 5,
+      "unexpected_percent": 21.73913043478261,
+      "partial_unexpected_list": [
+        "Advanc",
+        "Advanc",
+        "Advanc",
+        "Chunki",
+        "Chunki"
+      ]
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "text_for_embedding",
+      "kwargs": {
+        "column": "text_for_embedding"
+      },
+      "success": true,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "summary",
+      "kwargs": {
+        "column": "summary",
+        "min_value": 30
+      },
+      "success": false,
+      "observed_value": null,
+      "element_count": 23,
+      "unexpected_count": 5,
+      "unexpected_percent": 21.73913043478261,
+      "partial_unexpected_list": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "freshness": {
+    "freshness_threshold_days": 180,
+    "max_stale_ratio": 0.25,
+    "total_rows": 23,
+    "stale_rows": 6,
+    "stale_ratio": 0.2609,
+    "latest_published": "2026-06-11",
+    "oldest_published": "2025-03-28",
+    "min_age_days": 107,
+    "max_age_days": 547,
+    "is_fresh": false
+  },
+  "overall_healthy": false
+}
